@@ -1,0 +1,15 @@
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo transparente -->
+  <rect width="300" height="100" fill="transparent" />
+  
+  <!-- Texto "arrumaê" com fonte quadrada/geométrica -->
+  <g transform="translate(35, 65)">
+    <!-- Texto principal com fonte quadrada -->
+    <text font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="48" fill="#000000" letter-spacing="0">
+      arruma<tspan fill="#FF7D00">ê</tspan>
+    </text>
+    
+    <!-- Detalhe minimalista - pequeno ponto quadrado -->
+    <rect x="233" y="72" width="8" height="8" fill="#FF7D00" />
+  </g>
+</svg>

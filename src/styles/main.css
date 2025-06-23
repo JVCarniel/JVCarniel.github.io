@@ -1,0 +1,245 @@
+body{
+    background: #121212;
+    height: 100%;
+}
+/* Header */
+header {
+    background-color: #2E2E2E;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.imagem{
+    display: flex;
+    align-items: center;
+}
+.imagem img {
+    width: 50px;
+    height: auto;
+}
+.topicos ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.topicos ul li {
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.topicos ul li:hover {
+    color: #C2B280;
+}
+
+.topicos ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.topicos ul li a:hover {
+    color: #C2B280;
+}
+/* Fim header */
+
+main{
+
+}
+
+.linha-divisoria {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #ffffff 0%, #999999 100%);
+    width: 93%;
+    margin: 60px auto;
+    opacity: 0.5;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+/* Home */
+.Home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.HomeEu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.HomeMinhaImagem img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #2E2E2E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.HomeTexto h1 {
+    font-size: 32px;
+    color: white;
+    margin: 10px 0 5px;
+}
+
+.HomeTexto p {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.HomeContatos {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.icone-social {
+    width: 50px;
+    height: 50px;
+    background: #2E2E2E;
+    padding: 10px;
+    border-radius: 12px;
+}
+/* Fim home*/
+
+/* Sobre*/
+.Sobre {
+    display: flex;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.SobreMim, .Tecnologia {
+    flex: 2;
+    padding: 20px;
+}
+.SobreMim h2, .Tecnologia h2{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.SobreMim p {
+    color: white;
+    font-size: 20px;
+}
+
+.ListaTecnologia{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.icone-tecnologia {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: #2E2E2E;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 10px;
+    transition: transform 0.2s ease;
+    cursor: default;
+}
+
+/* Fim sobre */
+
+/* Projetos */
+.Projetos{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.Projetos h2{
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: white;
+}
+.gridprojetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projeto {
+    width: 700px;
+    height: 600px;
+    background-color: #2E2E2E;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projeto h3{
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: white;
+}
+.imagemProjeto img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #2E2E2E;
+    padding: 15px;
+}
+.textoProjeto{
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+/* Fim projetos */
+
+/* Footer */
+
+footer{
+    background-color: #2E2E2E;
+    height: 100px;
+}
+
+.footer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+footer p{
+    color: white;
+    margin: 10px;
+    font-size: 26px;
+}
+
+.icone-social-footer {
+    width: 50px;
+    height: 50px;
+    background: #2E2E2E;
+    padding: 10px;
+    border-radius: 12px;
+}
