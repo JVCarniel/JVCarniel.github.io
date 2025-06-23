@@ -19,6 +19,7 @@
       <li><a href="#Home">Home</a></li>
       <li><a href="#Sobre">Sobre</a></li>
       <li><a href="#Projetos">Projetos</a></li>
+      <li><a href="#Contato">Contato</a></li>
     </ul>
   </div>
 </header>
@@ -41,16 +42,16 @@
         <a href="https://github.com/JVCarniel" target="_blank">
           <img src="/src/assets/images/pnggithub.png"  alt="Github" class="icone-social"/>
         </a>
-        <a href=href="mailto:carnieeljoao@gmail.com">
+        <a href="mailto:carnieeljoao@gmail.com">
           <img src="/src/assets/images/pnggmail.png"  alt="Gmail" class="icone-social"/>
         </a>
       </div>
     </div>
   </div>
 
-  <hr class="linha-divisoria">
+  <hr class="linha-divisoria" id="Sobre">
 
-  <div class="Sobre" id="Sobre">
+  <div class="Sobre" >
 
     <div class="SobreMim">
       <h2>Sobre mim</h2>
@@ -62,26 +63,40 @@
     <div class="Tecnologia">
       <h2>Tecnologias que tenho conhecimento prévio</h2>
       <div class="ListaTecnologia">
-        <img src="/src/assets/images/pngDelphi.png"  alt="Delphi" class="icone-tecnologia"/>
-        <img src="/src/assets/images/pngSql.png" alt="Sql" class="icone-tecnologia"/>
-        <img src="/src/assets/images/pngC%23.png"  alt="CSharp" class="icone-tecnologia"/>
-        <img src="/src/assets/images/pngC++.png"  alt="CMaisMais" class="icone-tecnologia"/>
-        <img src="/src/assets/images/pngGit.png"  alt="Git" class="icone-tecnologia"/>
-        <img src="/src/assets/images/pngFigma.png"  alt="Sigma" class="icone-tecnologia"/>
-        <img src="/src/assets/images/pngLinux.png"  alt="Linux" class="icone-tecnologia"/>
+        <div class="tecnologia-item" data-nome="Delphi">
+          <img src="/src/assets/images/pngDelphi.png" alt="Delphi" class="icone-tecnologia" />
+        </div>
+        <div class="tecnologia-item" data-nome="SQL">
+          <img src="/src/assets/images/pngSql.png" alt="Sql" class="icone-tecnologia" />
+        </div>
+        <div class="tecnologia-item" data-nome="C#">
+          <img src="/src/assets/images/pngC%23.png" alt="CSharp" class="icone-tecnologia" />
+        </div>
+        <div class="tecnologia-item" data-nome="C++">
+          <img src="/src/assets/images/pngC++.png" alt="CMaisMais" class="icone-tecnologia" />
+        </div>
+        <div class="tecnologia-item" data-nome="Git">
+          <img src="/src/assets/images/pngGit.png" alt="Git" class="icone-tecnologia" />
+        </div>
+        <div class="tecnologia-item" data-nome="Figma">
+          <img src="/src/assets/images/pngFigma.png" alt="Figma" class="icone-tecnologia" />
+        </div>
+        <div class="tecnologia-item" data-nome="Linux">
+          <img src="/src/assets/images/pngLinux.png" alt="Linux" class="icone-tecnologia" />
+        </div>
       </div>
     </div>
 
   </div>
 
 
-  <hr class="linha-divisoria">
+  <hr class="linha-divisoria" id="Projetos">
 
-  <div class="Projetos" id="Projetos">
+  <div class="Projetos" >
     <h2>Projetos</h2>
 
     <div class ="gridprojetos">
-      <div class="projeto">
+      <div class="projeto" data-git="https://github.com/">
         <div class="tituloprojeto">
           <h3>MotoTrack App</h3>
         </div>
@@ -93,7 +108,7 @@
         </div>
       </div>
 
-      <div class="projeto">
+      <div class="projeto" data-git="https://github.com/uri-erechim/teams-2023-time-teu">
         <div class="tituloprojeto">
           <h3>Arrumaê</h3>
         </div>
@@ -105,6 +120,19 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <hr class="linha-divisoria" id="Contato">
+
+  <div class="Contato">
+    <h2>Contato</h2>
+    <form id="formContato" class="formulario-contato">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagem-enviada"></p>
   </div>
 
 </main>
@@ -120,12 +148,14 @@
       <a href="https://github.com/JVCarniel" target="_blank">
         <img src="/src/assets/images/pnggithub.png"  alt="Github" class="icone-social-footer"/>
       </a>
-      <a href=href="mailto:carnieeljoao@gmail.com">
+      <a href="mailto:carnieeljoao@gmail.com">
         <img src="/src/assets/images/pnggmail.png"  alt="Gmail" class="icone-social-footer"/>
       </a>
     </div>
   </div>
 </footer>
 
+<script src="./src/Scripts/Main.js"></script>
 </body>
+
 </html>
