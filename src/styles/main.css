@@ -337,7 +337,7 @@ footer p{
 /* Para telas até 1024px (tablets e notebooks) */
 @media (max-width: 1024px) {
     header {
-        padding: 15px 30px;
+        padding: 30px 30px;
     }
     .topicos ul {
         gap: 20px;
@@ -370,10 +370,6 @@ footer p{
         height: 60px;
         padding: 8px;
     }
-    .Projetos .gridprojetos {
-        flex-direction: column;
-        gap: 20px;
-    }
     .projeto {
         width: 100%;
         max-width: 500px;
@@ -393,25 +389,29 @@ footer p{
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 20px;
+        align-items: center;
+        padding: 30px 20px;
     }
     .topicos ul {
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 20px;
+        justify-content: center;
+    }
+    .imagem img {
+        width: 60px; /* aumenta o logo */
     }
     .HomeMinhaImagem img {
-        width: 120px;
-        height: 120px;
+        width: 160px;
+        height: 160px;
     }
     .HomeTexto h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
     .HomeTexto p {
-        font-size: 16px;
+        font-size: 18px;
     }
     .HomeContatos {
-        gap: 15px;
+        gap: 20px;
     }
     .icone-social {
         width: 40px;
@@ -442,7 +442,6 @@ footer p{
         padding: 0 10px;
     }
     .gridprojetos {
-        flex-direction: column;
         align-items: center; /* centraliza os projetos */
         justify-content: center;
         gap: 20px;
